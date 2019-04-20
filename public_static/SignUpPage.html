@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <style>
+        .row{
+            margin-bottom: 40px;
+        }
+        #yo{
+            margin-top: 130px;
+            margin-bottom: 50px;
+        }
+        .container{
+            background-color: blanchedalmond;
+            padding: 30px;
+        }
+        .inputs{
+            width: 90%;
+            transform: translateX(-50px);
+        }
+
+        #pass-det{
+            color: red;
+            visibility: hidden;
+            /* height: 0px; */
+        }
+       
+    
+    </style>
+    <script src="jquery-3.3.1.js"></script>
+    <!-- <script src="signup.js"></script> -->
+    <script src="signupp2.js"></script>
+    <script src="emailver.js"></script> 
+</head>
+<body>
+        <nav class="navbar nav-top sticky-top navbar-dark bg-dark" id="navb">
+            <a class="navbar-brand" href="index.html">WeatherStorm</a>
+            <a class="navbar-text" href="SignInPage.html" class="nav-link" class="removable">Already a user? Sign in</a>
+      </nav>
+<div id="yo"><center><h2 id="heading">Create your account</h2></center></div>
+<div class="container">
+    <div class="row">
+        <div class="col-2">First Name</div>
+        <div class="col-3"><input class="inputs" id="fn"></div>
+        <div class="col-2"></div>
+        <div class="col-2">Last Name</div>
+        <div class="col-3"><input class="inputs" id="ln"></div>
+    </div>
+    <div class="row">
+        <div class="col-2">Email id</div>
+        <div class="col-3"><input class="inputs" placeholder="someone@example.com" id="em"></div>
+        <div class="col-2"></div>
+        <div class="col-2">Mobile No.</div>
+        <div class="col-3"><input class="inputs" id="mob"></div>
+    </div>
+    <div class="row">
+        <div class="col-2">Username</div>
+        <div class="col-3"><input class="inputs" id="un"></div>
+        <div class="col-2"></div>
+        <div class="col-2">Password</div>
+        <div class="col-3"><input type="password" class="inputs" id="pass1">
+        <!--<br>-->
+            <span id="pass-det">OLa</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">Your Place</div>
+        <div class="col-3"><input class="inputs" id="pl"></div>
+        <div class="col-2"></div>
+        <div class="col-2">Re-type Password</div>
+        <div class="col-3"><input type="password" class="inputs" id="pass2"></div>
+    </div>
+    <!--<a href="afterSignUp.html">-->
+    <center><button type="submit" class="btn-large btn-primary" id="signup">Sign up</button></center>
+    <!--</a>-->
+</div>
+
+</body>
+</html>

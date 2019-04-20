@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Today's weather</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <script src="jquery-3.3.1.js"></script>
+    <script src="conditions.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>-->
+    <style>
+        .start-line{
+            font-size: 30px;
+            margin-top: 80px;
+            margin-left: 60px;
+        }
+        .outer div{
+            font-family: Calibri;
+            font-size: 25px;
+        }
+        #select-day{
+            width: 50px;
+            height: 40px;
+        }
+        #go{
+            height: 45px;
+        }
+        #tem div{
+            margin-left: 30px;
+            font-size: 20px;
+            font-family: "Comic Sans MS";
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar nav-top sticky-top navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">WeatherStorm</a>
+    <a class="navbar-text" href="SignInPage.html" class="nav-link">Sign in</a>
+    <a class="navbar-text" href="SignUpPage.html">New User? Sign up</a>
+</nav>
+<p>
+    <a class="btn btn-light" data-toggle="collapse" href="#currentc" role="button " aria-expanded="false" aria-controls="collapseExample">
+        Current Conditions
+    </a>
+    <a class="btn btn-light" role="button" data-toggle="collapse" href="#forecasts" aria-expanded="false" aria-controls="collapseExample">
+        Weather Forecast
+    </a>
+</p>
+
+    <div id="currentc" class="collapse">
+        <!--<span id="one">Current Conditions-->
+            <span id="placediv" class="start-line"> Today is like: </span><img id="weather-icon">
+    <br><br>
+<div class="container outer">
+<div id="temp">Temp: </div>
+<div id="realFeel">Feels like: </div>
+<div id="humid">Humidity: </div>
+<div id="uv-idx">UV Index: </div>
+<div id="vis">Visibility: </div>
+<div id="cc">Cloud Cover: </div>
+<div id="press">Pressure: </div>
+        <!--</span>-->
+
+    </div>
+
+
+    </div>
+
+    <div id="forecasts" class="collapse">
+        <span class="start-line">
+        Forecast for: </span>
+        <abbr title="Forecast available for next 5 days"><input type="text" id="select-day"> </abbr>
+        <button type="submit" class="btn btn-success" id="go">Go</button>
+        <br><br>
+        <div class="container outer" id="sec-div">
+        <div id="tem"> Temperature:
+            <div id="min" class="forremov">Minimum of- </div>
+            <div id="max" class="forremov">Maximum of- </div>
+        </div>
+            <br>
+        <div id="day" class="forremove">Day: <img id="day-img"></div>
+        <div id="nig" class="forremov">Night: <img id="nig-img"></div>
+        </div>
+</div>
+
+
+</body>
+</html>

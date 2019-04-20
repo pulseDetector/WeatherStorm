@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WeatherStorm</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <script src="jquery-3.3.1.js"></script>
+    <script src="home.js"></script>
+    <script src="homee2.js"></script>
+    <style>
+        #input-box{
+            width: 90%;
+            height: 50px;
+        }
+        #btn-search{
+            background-color: peachpuff;
+            height: 50px;
+            width: 100px;
+            font-size: larger;
+        }
+        #div-mid{
+            margin-top: 200px;
+        }
+        #clock{
+            position: absolute;
+            bottom: 30px;
+            /* right: 70px; */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar nav-top sticky-top navbar-dark bg-dark" id="navb">
+        <a class="navbar-brand" href="index.html">WeatherStorm</a>
+        <a class="navbar-text" href="SignInPage.html" class="nav-link" class="removable">Sign in</a>
+        <a class="navbar-text" href="SignUpPage.html" class="removable">New User? Sign up</a>
+    </nav>
+    <div class="container" id="div-mid">
+        <input type="text" id="input-box" placeholder="which city's weather are you looking for...">
+        <button type="submit" id="btn-search" class="btn-outline-secondary">Search</button>
+        <div id="clock"></div>
+    </div>
+</body>
+</html>
